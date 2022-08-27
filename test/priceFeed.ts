@@ -9,14 +9,23 @@ describe("Price Feed", () => {
     // This function runs before each test, this way we don't have to redeploy
     // the contract for every single test case.
     const PriceFeed = await ethers.getContractFactory("PriceFeed");
-    const priceFeed = await PriceFeed.deploy();
+    priceFeed = await PriceFeed.deploy();
   });
 
   it("Gets the PriceFeed contract", async () => {
     const PriceFeed = await ethers.getContractFactory("PriceFeed");
+    expect(PriceFeed);
   });
 
-  it("Has the chainlinkAggregator", async () => {
-    expect(priceFeed.chainlinkAggregator);
+  it("Has the Ether Price Feed Aggregator", async () => {
+    const ethPriceFeed = await priceFeed.getEthPriceFeed();
+    expect(ethPriceFeed);
+  });
+
+  it("Returns the latest price of Ether", async () => {
+
+    const latestPrice = await priceFeed.getLatestPrice(); 
+
+    expect(ethPriceFeed);
   });
 });
