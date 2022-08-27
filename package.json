@@ -1,12 +1,12 @@
 {
-  "name": "TDD-Data-Feeds",
+  "name": "tdd-data-feeds",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Salvien-code/TDD-Data-Feeds.git",
   "author": "Simon Samuel <salviensky@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "hardhat": "^2.10.2"
+    "@chainlink/contracts": "^0.4.1"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
@@ -23,6 +23,7 @@
     "@types/node": ">=12.0.0",
     "chai": "^4.2.0",
     "ethers": "^5.4.7",
+    "hardhat": "^2.10.2",
     "hardhat-gas-reporter": "^1.0.8",
     "solidity-coverage": "^0.7.21",
     "ts-node": ">=8.0.0",
