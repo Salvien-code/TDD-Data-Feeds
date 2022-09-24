@@ -6,7 +6,8 @@
   "author": "Simon Samuel <salviensky@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@chainlink/contracts": "^0.4.1"
+    "@chainlink/contracts": "^0.4.1",
+    "dotenv": "^16.0.2"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",

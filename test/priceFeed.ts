@@ -23,9 +23,6 @@ describe("Price Feed", () => {
   });
 
   it("Returns the latest price of Ether", async () => {
-
-    const latestPrice = await priceFeed.getLatestPrice(); 
-
-    expect(ethPriceFeed);
+    expect(await priceFeed.getLatestPrice()).not.be.null;
   });
 });
